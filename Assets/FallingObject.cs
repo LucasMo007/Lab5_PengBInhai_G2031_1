@@ -1,9 +1,19 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 
 public class FallingObject : MonoBehaviour
 {
+    private Rigidbody2D rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     void Update()
     {
+        Debug.Log("Velocity Y: " + rb.linearVelocity.y);
+
         if (transform.position.y < -10f)
         {
             Destroy(gameObject);
@@ -12,7 +22,6 @@ public class FallingObject : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // 碰到任何东西都销毁自己
         Destroy(gameObject);
     }
 }
