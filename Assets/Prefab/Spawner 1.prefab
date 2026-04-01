@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1646928655304555934
+--- !u!1 &3616422284107710667
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9061292380237221012}
-  - component: {fileID: 8641307387816062503}
+  - component: {fileID: 3878926417168639898}
+  - component: {fileID: 6328296932747442401}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: Spawner 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9061292380237221012
+--- !u!4 &3878926417168639898
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646928655304555934}
+  m_GameObject: {fileID: 3616422284107710667}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 6, z: 0}
@@ -32,18 +32,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8641307387816062503
+--- !u!114 &6328296932747442401
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646928655304555934}
+  m_GameObject: {fileID: 3616422284107710667}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d278c5b66fb87444793bb2a9ea863528, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ac5e7f373259ad41a822f0004c9f9ea, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  fallingObjectPrefab: {fileID: 4466310346600765718, guid: 8cf3f5a39623da644a5d5d7a17bb2cc9, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
+  fallingObjectPrefab: {fileID: 960519371074359011, guid: 8cf3f5a39623da644a5d5d7a17bb2cc9, type: 3}
+  bombPrefab: {fileID: 8094616078012771007, guid: 1331201e52c24c34cae17dbd45c4c427, type: 3}
   spawnInterval: 1.5
-  spawnRangeX: 3
+  spawnRangeX: 7
+  bombChance: 0.2

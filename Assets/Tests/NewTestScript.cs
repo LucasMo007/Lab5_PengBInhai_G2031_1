@@ -9,7 +9,6 @@ public class PlayerSetupTest
     public void SetUp()
     {
         player = new GameObject("Player");
-        //player.AddComponent<Rigidbody2D>();
         var rb = player.AddComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
         player.AddComponent<BoxCollider2D>();
@@ -52,5 +51,12 @@ public class PlayerSetupTest
     {
         player.AddComponent<SpriteRenderer>();
         Assert.IsNotNull(player.GetComponent<SpriteRenderer>());
+    }
+
+    [Test]
+    public void PlayerMovement_Script_Exists()
+    {
+        var type = System.Type.GetType("PlayerMovement, Assembly-CSharp");
+        Assert.IsNotNull(type, "PlayerMovement script exists in project");
     }
 }
