@@ -3,9 +3,9 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    // ==========================================
+    
     // SINGLETON PATTERN
-    // ==========================================
+
     // Only one GameManager can exist at a time.
     // Any script can access it via GameManager.Instance
     public static GameManager Instance { get; private set; }
